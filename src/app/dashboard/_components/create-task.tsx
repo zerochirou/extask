@@ -2,8 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Label } from '@radix-ui/react-label';
-import { ChevronDown, Flame, Loader2, Plus, SquarePen } from 'lucide-react';
+import { ChevronDown, Flame, Loader2, SquarePen } from 'lucide-react';
 import { Controller, useForm } from 'react-hook-form';
 import { format } from 'date-fns';
 import { Calendar } from '@/components/ui/calendar';
@@ -31,7 +30,6 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
-  DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog';

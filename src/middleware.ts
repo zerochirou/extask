@@ -11,7 +11,7 @@ function supabaseServer() {
     {
       cookies: {
         getAll: async () => (await cookies()).getAll(),
-        setAll: (cookiesToSet) => {},
+        setAll: () => {},
       },
     }
   );
@@ -23,7 +23,6 @@ export async function middleware(req: NextRequest) {
 
   const {
     data: { user },
-    error,
   } = await supabase.auth.getUser();
 
   // misalnya kalo belum login, redirect ke login page

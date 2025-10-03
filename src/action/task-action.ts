@@ -47,7 +47,7 @@ export async function deleteTask(id: string) {
 }
 
 export async function finsishedTaskCount() {
-  const { count, error } = await supabaseServer
+  const { count } = await supabaseServer
     .from('todos_duplicate')
     .select('*', { count: 'exact', head: true })
     .eq('status', true);

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Geist_Mono, Poppins, Baloo_2 } from 'next/font/google';
+import { Geist_Mono, Baloo_2 } from 'next/font/google';
 import { Toaster } from 'sonner';
 import { ThemeProvider } from '@/providers/theme-provider';
 import './globals.css';

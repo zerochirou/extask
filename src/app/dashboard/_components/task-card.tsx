@@ -5,7 +5,6 @@ import { Button } from '@/components/ui/button';
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardTitle,
 } from '@/components/ui/card';
@@ -25,7 +24,6 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { dateAdapter } from '@/lib/lib-adapter';
 import { deleteTask, finishedTask } from '@/action/task-action';
-import { useTheme } from 'next-themes';
 
 export function TaskCard({
   id,
@@ -42,7 +40,6 @@ export function TaskCard({
   deadline: string;
   description?: string;
 }) {
-  const { theme } = useTheme();
   const [isFinishPending, startFinishTransition] = useTransition();
   const [isDeletePending, startDeleteTransition] = useTransition();
   const handleFinish = async () => {
