@@ -1,16 +1,8 @@
-<div align="center">
-
-<img width="50%" align="center" src="./assets/logo.png">
+<div>
 
 ## Extask, a todolist based on
 
 **Extask** is a todolist app based supabase
-
-**Login Page**  
-<img align="center" src="./assets/login-view.png">
-**Home Page**  
-<img align="center" src="./assets/home-view.png">
-
 </div>
 
 ## Commit Rules
