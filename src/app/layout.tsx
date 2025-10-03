@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import { Geist_Mono, Poppins, Baloo_2 } from 'next/font/google';
+import { Geist_Mono, Baloo_2 } from 'next/font/google';
 import { Toaster } from 'sonner';
 import { ThemeProvider } from '@/providers/theme-provider';
 import './globals.css';
 
-const poppins = Baloo_2({
+const font = Baloo_2({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'], // pilih variasi yang dibutuhkan
   display: 'swap',
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${poppins.className} ${geistMono.variable} antialiased`}
+        className={`${font.className} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider
           attribute="class"

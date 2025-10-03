@@ -1,4 +1,4 @@
-import z, { email } from 'zod';
+import z from 'zod';
 
 export const userSchema = z.object({
   email: z.string().email({ message: 'email is invalid!' }),
